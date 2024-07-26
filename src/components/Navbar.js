@@ -1,39 +1,27 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import "../styles/navbar.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { FaSearch, FaUserCircle, FaMapMarkerAlt } from 'react-icons/fa';
 
 export default function Navbar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
+  const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <Link href="/" className="navbar-brand">YourBrand</Link>
-      <button
-        className="navbar-toggler"
-        type="button"
-        onClick={() => setDropdownOpen(!dropdownOpen)}
-        aria-controls="navbarNav"
-        aria-expanded={dropdownOpen}
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className={`collapse navbar-collapse ${dropdownOpen ? 'show' : ''}`} id="navbarNav">
-        <ul className="navbar-nav mr-auto">
+    <nav className="navbar">
+      <Link href="/" className="navbar-brand">PitchCraft</Link>
+      <div className={`navbar-collapse ${dropdownOpen ? 'show' : ''}`}>
+        <ul className="navbar-nav">
           <li className="nav-item dropdown">
-            <a
-              className="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded={dropdownOpen}
+            <button
+              className="nav-link-seperate dropdown-toggle no-border" // Added no-border class
+              type="button"
+              onClick={toggleDropdown}
             >
-              Location Near Me
-            </a>
-            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+              <FaMapMarkerAlt className="mr-1" /> Location
+            </button>
+            <div className={`dropdown-menu ${dropdownOpen ? 'show' : ''}`}>
               <Link href="#" className="dropdown-item">Nearby Location 1</Link>
               <Link href="#" className="dropdown-item">Nearby Location 2</Link>
               <Link href="#" className="dropdown-item">Nearby Location 3</Link>
@@ -58,8 +46,14 @@ export default function Navbar() {
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
             <form className="form-inline my-2 my-lg-0">
-              <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-              <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              <div className="input-group">
+                <div className="input-group-prepend">
+                  <button className="btn btn-outline-secondary" type="button">
+                    <FaSearch />
+                  </button>
+                </div>
+                <input className="form-control" type="search" placeholder="Search" aria-label="Search" />
+              </div>
             </form>
           </li>
           <li className="nav-item">
@@ -69,7 +63,7 @@ export default function Navbar() {
             <Link href="#" className="nav-link">My Pitch</Link>
           </li>
           <li className="nav-item">
-            <Link href="#" className="nav-link">My Profile</Link>
+            <Link href="#" className="nav-link"><FaUserCircle /> </Link>
           </li>
         </ul>
       </div>

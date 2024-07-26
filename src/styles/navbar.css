@@ -1,91 +1,176 @@
 /* Basic styling for navbar */
 .navbar {
-  background-color: #343a40; /* Dark background color for a modern look */
-  border-bottom: 1px solid #454d55; /* Slightly darker border for contrast */
-  padding: 0 1rem; /* Add padding to the left and right of the navbar */
+  background-color: #ffffff; /* White background for navbar */
+  border-bottom: 1px solid #e5e5e5; /* Subtle border at the bottom */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for subtle depth */
+  /* padding: 0.75rem 1.5rem;  */
+  padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
 }
 
 .navbar-brand {
-  font-weight: bold;
-  color: #ffffff; /* White text for the brand */
   font-size: 1.5rem; /* Larger font size for the brand */
-}
-
-.navbar-brand:hover {
-  color: #f8f9fa; /* Light color on hover */
-}
-
-.navbar-nav {
-  display: flex; /* Use flexbox to align items horizontally */
-  flex-direction: row; /* Ensure items are in a row */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-  list-style: none; /* Remove default list styles (bullets) */
-}
-
-.navbar-nav .nav-item {
-  margin-left: 1rem; /* Add spacing between items */
-  position: relative; /* Ensure dropdown positioning is relative to nav-item */
-}
-
-.navbar-nav .nav-link {
-  color: #ffffff; /* White text for links */
-  padding: 0.75rem 1.25rem; /* Adjust padding for better spacing */
-  font-size: 1rem; /* Slightly larger font size */
-  text-decoration: none; /* Remove underline from links */
-}
-
-.navbar-nav .nav-link:hover {
-  color: #ced4da; /* Light color on hover */
-  background-color: rgba(255, 255, 255, 0.1); /* Subtle background change on hover */
-  border-radius: 0.25rem; /* Rounded corners for hover effect */
+  font-weight: 700; /* Bold font weight */
+  color: #333; /* Dark text color */
+  text-decoration: none; /* Remove underline */
 }
 
 .navbar-toggler {
-  border: none; /* Remove default border */
+  background: none;
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 0.25rem; /* Slightly rounded corners */
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth background transition */
 }
 
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,..."); /* Adjust if needed */
+.navbar-toggler:hover {
+  background-color: #f0f0f0; /* Light background on hover */
 }
 
-/* Dropdown menu */
+.navbar-collapse {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+  justify-content: left; /* Distribute space evenly */
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.75rem 1.25rem; /* Adjust padding for links */
+  color: #333; /* Dark text color */
+  text-decoration: none; /* Remove underline */
+  font-size: 1rem; /* Standard font size */
+  border-radius: 0.25rem; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background-color: #f0f0f0; /* Light background on hover/focus */
+  color: #a233c1; /* Change text color on hover/focus */
+}
+
+.nav-link-seperate {
+  display: block;
+  padding: 0.75rem 1.25rem; /* Adjust padding for links */
+  color: #333; /* Dark text color */
+  text-decoration: none; /* Remove underline */
+  font-size: 1rem; /* Standard font size */
+  border-radius: 0.25rem; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+
 .dropdown-menu {
-  background-color: #ffffff; /* White background color for dropdown */
-  border: 1px solid #dee2e6; /* Border for dropdown items */
-  border-radius: 0.25rem; /* Rounded corners for dropdown */
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Subtle shadow */
-  position: absolute; /* Position absolutely to overlay other content */
-  top: 100%; /* Position dropdown below the trigger */
-  left: 0; /* Align dropdown to the left of the trigger */
-  z-index: 1000; /* Ensure dropdown appears above other content */
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 0.25rem; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for dropdown */
+  padding: 0.5rem 0;
+  list-style: none;
+  margin: 0;
+  z-index: 1000; /* Ensure dropdown is on top */
+  width: max-content; /* Adjust width based on content */
+}
+
+.dropdown-menu.show {
+  display: block;
 }
 
 .dropdown-item {
-  color: #212529; /* Dark text color for dropdown items */
-  padding: 0.75rem 1.25rem; /* Adjust padding for dropdown items */
+  padding: 0.75rem 1.25rem; /* Padding for dropdown items */
+  color: #333; /* Dark text color */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+  white-space: nowrap; /* Prevent text wrapping */
 }
 
-.dropdown-item:hover {
-  background-color: #f8f9fa; /* Light background on hover */
-  color: #212529; /* Dark text color on hover */
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #f0f0f0; /* Light background on hover/focus */
 }
 
-/* Search form */
 .form-inline {
-  display: flex; /* Flexbox for alignment */
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.input-group {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.input-group-prepend {
+  margin-right: -1px; /* Remove space between button and input */
+}
+
+.btn-outline-secondary {
+  border: none;
+  color: #333; /* Dark text color */
+  background-color: transparent; /* Transparent background */
+  padding: 0.5rem; /* Padding for button */
+  border-radius: 0.25rem; /* Rounded corners */
+  display: flex;
+  align-items: center; /* Center icon vertically */
+  margin-top: 5px;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #f0f0f0; /* Light background on hover */
 }
 
 .form-control {
-  border-radius: 0.25rem; /* Rounded corners */
+  padding: 0.5rem 0.75rem; /* Adjust padding */
+  border-radius: 10.25rem; /* Rounded corners */
+  border: 1px solid #000000; /* Border color */
+  /* margin-left: -1px;  */
+  margin-top: 5px;
 }
 
-.btn-outline-success {
-  color: #28a745; /* Success color for button text */
-  border-color: #28a745; /* Border color */
+.nav-item .nav-link svg {
+  vertical-align: middle; /* Center icon vertically */
+  margin-right: 0.0rem; /* Space between icon and text */
 }
 
-.btn-outline-success:hover {
-  background-color: #28a745; /* Green background on hover */
-  color: #ffffff; /* White text on hover */
+/* Additional styles for better spacing and alignment */
+
+
+.navbar-nav .nav-item:last-child {
+  margin-right: 0; /* Remove margin from the last item */
+}
+
+.navbar-nav.ml-auto {
+  margin-left: auto; /* Align items to the right */
+}
+
+.nav-link-seperate.dropdown-toggle {
+  border: none; 
+  background-color: #ffffff;
+  display: flex;
+  align-items: center; /* Center icon and text vertically */
+}
+
+.nav-bar-seperate.dropdown-toggle:hover {
+  background-color: #f0f0f0;
 }
