@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import "../styles/navbar.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Navbar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);

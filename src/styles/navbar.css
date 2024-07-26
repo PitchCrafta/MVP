@@ -1,33 +1,91 @@
 /* Basic styling for navbar */
-
 .navbar {
-    background-color: #f8f9fa; /* Light background color */
-    border-bottom: 1px solid #dee2e6; /* Border at the bottom */
-  }
-  
-  .navbar-brand {
-    font-weight: bold;
-  }
-  
-  .navbar-nav .nav-link {
-    padding: 0.5rem 1rem; /* Adjust padding for links */
-  }
-  
-  .navbar-toggler {
-    border: none; /* Remove default border */
-  }
-  
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml, ..."); /* Adjust if needed */
-  }
-  
-  /* Dropdown menu */
-  .dropdown-menu {
-    background-color: #ffffff; /* Background color for dropdown */
-    border: 1px solid #dee2e6; /* Border for dropdown items */
-  }
-  
-  .dropdown-item {
-    padding: 0.5rem 1rem; /* Padding for dropdown items */
-  }
-  
+  background-color: #343a40; /* Dark background color for a modern look */
+  border-bottom: 1px solid #454d55; /* Slightly darker border for contrast */
+  padding: 0 1rem; /* Add padding to the left and right of the navbar */
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #ffffff; /* White text for the brand */
+  font-size: 1.5rem; /* Larger font size for the brand */
+}
+
+.navbar-brand:hover {
+  color: #f8f9fa; /* Light color on hover */
+}
+
+.navbar-nav {
+  display: flex; /* Use flexbox to align items horizontally */
+  flex-direction: row; /* Ensure items are in a row */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  list-style: none; /* Remove default list styles (bullets) */
+}
+
+.navbar-nav .nav-item {
+  margin-left: 1rem; /* Add spacing between items */
+  position: relative; /* Ensure dropdown positioning is relative to nav-item */
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff; /* White text for links */
+  padding: 0.75rem 1.25rem; /* Adjust padding for better spacing */
+  font-size: 1rem; /* Slightly larger font size */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ced4da; /* Light color on hover */
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle background change on hover */
+  border-radius: 0.25rem; /* Rounded corners for hover effect */
+}
+
+.navbar-toggler {
+  border: none; /* Remove default border */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,..."); /* Adjust if needed */
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  background-color: #ffffff; /* White background color for dropdown */
+  border: 1px solid #dee2e6; /* Border for dropdown items */
+  border-radius: 0.25rem; /* Rounded corners for dropdown */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Subtle shadow */
+  position: absolute; /* Position absolutely to overlay other content */
+  top: 100%; /* Position dropdown below the trigger */
+  left: 0; /* Align dropdown to the left of the trigger */
+  z-index: 1000; /* Ensure dropdown appears above other content */
+}
+
+.dropdown-item {
+  color: #212529; /* Dark text color for dropdown items */
+  padding: 0.75rem 1.25rem; /* Adjust padding for dropdown items */
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa; /* Light background on hover */
+  color: #212529; /* Dark text color on hover */
+}
+
+/* Search form */
+.form-inline {
+  display: flex; /* Flexbox for alignment */
+}
+
+.form-control {
+  border-radius: 0.25rem; /* Rounded corners */
+}
+
+.btn-outline-success {
+  color: #28a745; /* Success color for button text */
+  border-color: #28a745; /* Border color */
+}
+
+.btn-outline-success:hover {
+  background-color: #28a745; /* Green background on hover */
+  color: #ffffff; /* White text on hover */
+}
