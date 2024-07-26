@@ -1,0 +1,33 @@
+/* Basic styling for navbar */
+
+.navbar {
+    background-color: #f8f9fa; /* Light background color */
+    border-bottom: 1px solid #dee2e6; /* Border at the bottom */
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 0.5rem 1rem; /* Adjust padding for links */
+  }
+  
+  .navbar-toggler {
+    border: none; /* Remove default border */
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml, ..."); /* Adjust if needed */
+  }
+  
+  /* Dropdown menu */
+  .dropdown-menu {
+    background-color: #ffffff; /* Background color for dropdown */
+    border: 1px solid #dee2e6; /* Border for dropdown items */
+  }
+  
+  .dropdown-item {
+    padding: 0.5rem 1rem; /* Padding for dropdown items */
+  }
+  
