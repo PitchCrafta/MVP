@@ -7,6 +7,7 @@
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     background: #fff; /* Background color of the container */
+    top: -10rem;
   }
   
   .overlay-content {
@@ -14,11 +15,15 @@
   }
   
   .overlay-title {
+    text-align: center;
     font-size: 1.5rem;
     margin: 0 0 10px;
   }
   
   .overlay-description {
+    text-align: center;
+    color: gray;
+    font-weight: bold;
     font-size: 1rem;
     margin: 0;
   }

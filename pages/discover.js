@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar';
 import Banner from '../components/Banner';
 import OverlayContainer from '../components/OverlayContainer';
 import Card from '../components/Card';
+import '../styles/discover.css'
 
 export default function DiscoverPage() {
   return (
@@ -9,11 +10,13 @@ export default function DiscoverPage() {
       <Navbar />
       <Banner />
       <main className="flex min-h-screen flex-col items-center justify-between p-8">
-        <h1>Discover Page</h1>
         <OverlayContainer
-          title="Investors & Pitches"
-          description="Explore the latest investors and pitches from startups."
+          title="Discover"
+          description="The potential to bridge startups and investors"
         >
+        <div className='sub-header'>
+            <h2>Investors</h2>
+            </div>
           <div className="card-grid">
             <Card
               title="Investor 1"
@@ -26,6 +29,28 @@ export default function DiscoverPage() {
               description="Description for Investor 2."
             />
             <Card
+              title="Investor 2"
+              image="https://via.placeholder.com/150"
+              description="Description for Investor 2."
+            />
+            <Card
+              title="Investor 2"
+              image="https://via.placeholder.com/150"
+              description="Description for Investor 2."
+            />
+            <Card
+              title="Investor 2"
+              image="https://via.placeholder.com/150"
+              description="Description for Investor 2."
+            />
+            </div>
+            <div className='sub-header'>
+            <h2>Pitches from Other Startups</h2>
+            </div>
+            <div className="card-grid">
+            
+            
+            <Card
               title="Pitch 1"
               image="https://via.placeholder.com/150"
               description="Description for Pitch 1."
@@ -35,7 +60,21 @@ export default function DiscoverPage() {
               image="https://via.placeholder.com/150"
               description="Description for Pitch 2."
             />
-            {/* Add more Card components as needed */}
+            <Card
+              title="Pitch 2"
+              image="https://via.placeholder.com/150"
+              description="Description for Pitch 2."
+            />
+            <Card
+              title="Pitch 2"
+              image="https://via.placeholder.com/150"
+              description="Description for Pitch 2."
+            />
+            <Card
+              title="Pitch 2"
+              image="https://via.placeholder.com/150"
+              description="Description for Pitch 2."
+            />
           </div>
         </OverlayContainer>
       </main>

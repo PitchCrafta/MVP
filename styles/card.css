@@ -1,8 +1,11 @@
 .card {
+    flex: 1 1 calc(20% - 16px); /* Each card takes up approximately one-third of the container width */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
   }
   
   .image {
@@ -14,9 +17,12 @@
   .title {
     font-size: 1.25rem;
     margin: 0.5rem;
+    font-weight: bold; /* Optional: makes the title bold */
   }
   
   .description {
     padding: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
   }
   

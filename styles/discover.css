@@ -1,0 +1,13 @@
+.card-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of cards to the next line if they don't fit in one line */
+    gap: 16px; /* Space between cards */
+    padding: 16px; /* Optional: Adds padding around the card container */
+  }
+
+.sub-header {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+  
