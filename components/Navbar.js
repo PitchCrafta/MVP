@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <Link href="/" className="navbar-brand">PitchCraft</Link>
+      <Link href="/" className="navbar-brand">PitchCrafta</Link>
       <div className={`navbar-collapse ${dropdownOpen ? 'show' : ''}`}>
         <ul className="navbar-nav">
           <li className="nav-item dropdown">

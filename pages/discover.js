@@ -4,7 +4,7 @@ import OverlayContainer from '../components/OverlayContainer';
 import Card from '../components/Card';
 import '../styles/discover.css'
 import { IoMegaphoneOutline } from "react-icons/io5";
-import { RiBuilding4Line } from "react-icons/ri";
+import { RiBuilding4Line, RiNewsLine } from "react-icons/ri";
 import { MdArrowForwardIos } from "react-icons/md";
 
 export default function DiscoverPage() {
@@ -83,6 +83,18 @@ export default function DiscoverPage() {
               description="Description for Pitch 2."
             />
           </div>
+          <div className='sub-header'>
+        <RiNewsLine />
+            <h2>News</h2>
+            <MdArrowForwardIos />
+            </div>
+            <div className="section-content">
+            <div className="section-item">
+              <h3>News 1</h3>
+              <p>Description for News 1.</p>
+              <a href="#" className="link">Read more</a>
+            </div>
+            </div>
         </OverlayContainer>
       </main>
     </div>
