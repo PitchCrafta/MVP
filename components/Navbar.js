@@ -28,19 +28,19 @@ export default function Navbar() {
             </div>
           </li>
           <li className="nav-item">
-            <Link href="#" className="nav-link">Discover</Link>
+            <Link href="/discover" className="nav-link">Discover</Link>
           </li>
           <li className="nav-item">
-            <Link href="#" className="nav-link">Craft Your Pitch</Link>
+            <Link href="/craft-pitch" className="nav-link">Craft Your Pitch</Link>
           </li>
           <li className="nav-item">
-            <Link href="#" className="nav-link">Recommendation</Link>
+            <Link href="/recommendation" className="nav-link">Recommendation</Link>
           </li>
           <li className="nav-item">
-            <Link href="#" className="nav-link">Search Investor</Link>
+            <Link href="/search-investor" className="nav-link">Search Investor</Link>
           </li>
           <li className="nav-item">
-            <Link href="#" className="nav-link">News</Link>
+            <Link href="/news" className="nav-link">News</Link>
           </li>
         </ul>
         <ul className="navbar-nav ml-auto">
