@@ -3,6 +3,9 @@ import Banner from '../components/Banner';
 import OverlayContainer from '../components/OverlayContainer';
 import Card from '../components/Card';
 import '../styles/discover.css'
+import { IoMegaphoneOutline } from "react-icons/io5";
+import { RiBuilding4Line } from "react-icons/ri";
+import { MdArrowForwardIos } from "react-icons/md";
 
 export default function DiscoverPage() {
   return (
@@ -15,7 +18,9 @@ export default function DiscoverPage() {
           description="The potential to bridge startups and investors"
         >
         <div className='sub-header'>
+        <RiBuilding4Line />
             <h2>Investors</h2>
+            <MdArrowForwardIos />
             </div>
           <div className="card-grid">
             <Card
@@ -29,23 +34,25 @@ export default function DiscoverPage() {
               description="Description for Investor 2."
             />
             <Card
-              title="Investor 2"
+              title="Investor 3"
               image="https://via.placeholder.com/150"
               description="Description for Investor 2."
             />
             <Card
-              title="Investor 2"
+              title="Investor 4"
               image="https://via.placeholder.com/150"
               description="Description for Investor 2."
             />
             <Card
-              title="Investor 2"
+              title="Investor 5"
               image="https://via.placeholder.com/150"
               description="Description for Investor 2."
             />
             </div>
             <div className='sub-header'>
+            <IoMegaphoneOutline />
             <h2>Pitches from Other Startups</h2>
+            <MdArrowForwardIos />
             </div>
             <div className="card-grid">
             

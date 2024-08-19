@@ -5,9 +5,18 @@
     padding: 16px; /* Optional: Adds padding around the card container */
   }
 
-.sub-header {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    text-align: left;
-}
+  .sub-header {
+    display: flex;
+    align-items: center; /* Vertically centers items */
+    gap: 8px; /* Space between items */
+  }
+  
+  .sub-header h2 {
+    margin: 0; /* Remove default margin from h2 */
+  }
+  
+  .sub-header svg {
+    font-size: 24px; /* Adjust icon size */
+  }
+  
   
