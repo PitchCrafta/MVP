@@ -13,6 +13,7 @@
   
   .sub-header h2 {
     margin: 0; /* Remove default margin from h2 */
+    color: black;
   }
   
   .sub-header svg {

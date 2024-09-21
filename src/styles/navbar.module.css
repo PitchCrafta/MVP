@@ -3,7 +3,6 @@
   background-color: #ffffff; /* White background for navbar */
   border-bottom: 1px solid #e5e5e5; /* Subtle border at the bottom */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for subtle depth */
-  /* padding: 0.75rem 1.5rem;  */
   padding-bottom: 0.5rem;
   display: flex;
   justify-content: space-between;
@@ -11,34 +10,20 @@
   padding-left: 2rem;
 }
 
-.navbar-brand {
+.navbarBrand {
   font-size: 1.5rem; /* Larger font size for the brand */
   font-weight: 700; /* Bold font weight */
   color: #333; /* Dark text color */
   text-decoration: none; /* Remove underline */
 }
 
-.navbar-toggler {
-  background: none;
-  border: 1px solid #ddd; /* Subtle border */
-  border-radius: 0.25rem; /* Slightly rounded corners */
-  padding: 0.5rem;
-  font-size: 1.5rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease; /* Smooth background transition */
-}
-
-.navbar-toggler:hover {
-  background-color: #f0f0f0; /* Light background on hover */
-}
-
-.navbar-collapse {
+.navbarCollapse {
   display: flex;
   align-items: center;
   flex-grow: 1;
 }
 
-.navbar-nav {
+.navbarNav {
   display: flex;
   list-style: none;
   padding: 0;
@@ -47,12 +32,12 @@
   justify-content: left; /* Distribute space evenly */
 }
 
-.nav-item {
+.navItem {
   position: relative;
-  margin-right: -0.5rem;
+  margin-right: 1rem; /* Add space between nav items */
 }
 
-.nav-link {
+.navLink {
   display: block;
   padding: 0.75rem 1.25rem; /* Adjust padding for links */
   color: #333; /* Dark text color */
@@ -62,24 +47,28 @@
   transition: background-color 0.3s ease; /* Smooth background transition */
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  /* background-color: #f0f0f0;  */
+.navLink:hover,
+.navLink:focus {
   color: #a233c1; /* Change text color on hover/focus */
 }
 
-.nav-link-seperate {
+.navLinkSeparate {
   display: block;
-  padding: 0.75rem 1.25rem; /* Adjust padding for links */
-  color: #333; /* Dark text color */
-  text-decoration: none; /* Remove underline */
-  font-size: 1rem; /* Standard font size */
-  border-radius: 0.25rem; /* Rounded corners */
-  transition: background-color 0.3s ease; /* Smooth background transition */
+  padding: 0.75rem 1.25rem;
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
 }
 
+.navLinkSeparate:hover,
+.navLinkSeparate:focus {
+  background-color: #f0f0f0;
+  color: #a233c1; /* Consistent hover color */
+}
 
-.dropdown-menu {
+.dropdownMenu {
   display: none;
   position: absolute;
   top: 100%;
@@ -95,11 +84,11 @@
   width: max-content; /* Adjust width based on content */
 }
 
-.dropdown-menu.show {
+.dropdownMenu.show {
   display: block;
 }
 
-.dropdown-item {
+.dropdownItem {
   padding: 0.75rem 1.25rem; /* Padding for dropdown items */
   color: #333; /* Dark text color */
   text-decoration: none; /* Remove underline */
@@ -107,26 +96,26 @@
   white-space: nowrap; /* Prevent text wrapping */
 }
 
-.dropdown-item:hover,
-.dropdown-item:focus {
+.dropdownItem:hover,
+.dropdownItem:focus {
   background-color: #f0f0f0; /* Light background on hover/focus */
 }
 
-.form-inline {
+.formInline {
   display: flex;
   align-items: center; /* Center items vertically */
 }
 
-.input-group {
+.inputGroup {
   display: flex;
   align-items: center; /* Center items vertically */
 }
 
-.input-group-prepend {
+.inputGroupPrepend {
   margin-right: -1px; /* Remove space between button and input */
 }
 
-.btn-outline-secondary {
+.btnOutlineSecondary {
   border: none;
   color: #333; /* Dark text color */
   background-color: transparent; /* Transparent background */
@@ -137,41 +126,37 @@
   margin-top: 5px;
 }
 
-.btn-outline-secondary:hover {
+.btnOutlineSecondary:hover {
   background-color: #f0f0f0; /* Light background on hover */
 }
 
-.form-control {
+.formControl {
   padding: 0.5rem 0.75rem; /* Adjust padding */
   border-radius: 10.25rem; /* Rounded corners */
   border: 1px solid #000000; /* Border color */
-  /* margin-left: -1px;  */
   margin-top: 5px;
 }
 
-.nav-item .nav-link svg {
+.navItem .navLink svg {
   vertical-align: middle; /* Center icon vertically */
-  margin-right: 0.0rem; /* Space between icon and text */
+  margin-right: 0rem; /* Adjust spacing if needed */
 }
 
-/* Additional styles for better spacing and alignment */
-
-
-.navbar-nav .nav-item:last-child {
+.navbarNav .navItem:last-child {
   margin-right: 0; /* Remove margin from the last item */
 }
 
-.navbar-nav.ml-auto {
+.navbarNav.mlAuto {
   margin-left: auto; /* Align items to the right */
 }
 
-.nav-link-seperate.dropdown-toggle {
+.navLinkSeparate.dropdownToggle {
   border: none; 
   background-color: #ffffff;
   display: flex;
   align-items: center; /* Center icon and text vertically */
 }
 
-.nav-bar-seperate.dropdown-toggle:hover {
+.navLinkSeparate.dropdownToggle:hover {
   background-color: #f0f0f0;
 }

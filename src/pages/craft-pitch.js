@@ -1,6 +1,6 @@
-import Navbar from '../components/Navbar';
-import Banner from '../components/Banner';
-import OverlayContainer from '../components/OverlayContainer';
+import Navbar from '../components/Navbar.js';
+import Banner from '../components/Banner.js';
+import OverlayContainer from '../components/OverlayContainer.js';
 
 export default function CraftPitchPage() {
   return (

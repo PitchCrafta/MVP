@@ -18,8 +18,10 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-end-rgb));
+  /* background: rgb(var(--background-end-rgb)); */
+  background-color: #ffffff;
   margin: 0;
+  color: black;
 }
 
 @layer utilities {
